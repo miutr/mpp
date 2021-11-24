@@ -1,7 +1,7 @@
 package mpp.lab3.prob1;
 
 public class PersonWithJob {
-
+ 
 	private Person person;
 	private double salary;
 
