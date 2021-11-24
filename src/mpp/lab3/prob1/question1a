@@ -1,0 +1,2 @@
+p1.equals(p2) this method checks for a Person object is instance of PersonWithJob. At this point, person is base class and not instance of PersonWithJob.
+But PersonWithJob class is inherited from Person class and instance of it. This is why p1.equals(p2) return false and other returns true.
