@@ -11,7 +11,6 @@ public class LandLord {
 	}
 	
 	public double calculateProfit() {
-
 		double sum=0;
 		for(Building building : buildings) {
 			sum+=building.calculateProfit();

@@ -1,7 +1,6 @@
 package mpp.lab3.prob3.Problem3b;
 
 public class Cylinder {
-
 	private double height;
 	private double radius;
 	private Circle circle;
@@ -13,10 +12,9 @@ public class Cylinder {
 	}
 
 	public double computeVolume() {
-
 		return height*circle.computeArea();
-
 	}
+	
 	public double getHeight() {
 		return height;
 	}

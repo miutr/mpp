@@ -26,7 +26,6 @@ public class Main {
 		LandLord l1=new LandLord();
 		l1.setBuildings(buildings);
 		
-		
 		System.out.println(l1.calculateProfit());
 	}
 }
