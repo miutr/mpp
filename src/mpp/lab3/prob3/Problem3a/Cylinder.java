@@ -1,6 +1,6 @@
+package mpp.lab3.prob3.Problem3a;
 
 public class Cylinder extends Circle{
-
 	private double height;
 	private double radius;
 
@@ -31,7 +31,4 @@ public class Cylinder extends Circle{
 	public void setRadius(double radius) {
 		this.radius = radius;
 	}
-
-
-
 }

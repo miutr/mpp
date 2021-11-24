@@ -1,6 +1,6 @@
+package mpp.lab3.prob3.Problem3a;
 
 public class Circle {
-
 	private double radius;
 	final double pi=3.14;
 	
@@ -15,7 +15,4 @@ public class Circle {
 		 
 		return Math.pow(radius, 2)*pi;
 	}
-	
-	
-	
 }

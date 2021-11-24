@@ -1,10 +1,10 @@
+package mpp.lab3.prob2;
+
 import java.util.ArrayList;
 
 public class Main {
 
-
-	public static void main(String[] args) 
-	{ 
+	public static void main(String[] args) { 
 		ArrayList<Apartment> apartments = new ArrayList<Apartment>();
 		Apartment a1= new Apartment();
 		a1.setRent(1000);

@@ -1,9 +1,11 @@
+package mpp.lab3.prob2;
+
 import java.util.ArrayList;
 
 public class Building {
-
 	private ArrayList<Apartment> apartments = new ArrayList<Apartment>();
 	private double maintenanceCost;
+	
 	public Building() {
 
 	}
@@ -31,11 +33,4 @@ public class Building {
 	public void setMaintenanceCost(double maintenanceCost) {
 		this.maintenanceCost = maintenanceCost;
 	}
-
-
-
-
-
-
-
 }

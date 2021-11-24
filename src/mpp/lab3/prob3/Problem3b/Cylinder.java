@@ -1,10 +1,10 @@
+package mpp.lab3.prob3.Problem3b;
 
 public class Cylinder {
 
 	private double height;
 	private double radius;
 	private Circle circle;
-
 
 	public Cylinder(double radius,double height) {
 		this.radius=radius;
@@ -32,7 +32,4 @@ public class Cylinder {
 	public void setRadius(double radius) {
 		this.radius = radius;
 	}
-
-
-
 }

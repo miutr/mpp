@@ -1,3 +1,5 @@
+package mpp.lab3.prob2;
+
 import java.util.ArrayList;
 
 public class LandLord {
@@ -25,7 +27,5 @@ public class LandLord {
 	public void setBuildings(ArrayList<Building> buildings) {
 		this.buildings = buildings;
 	}
-	
-	
-	
+
 }
