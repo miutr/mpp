@@ -12,7 +12,7 @@ public class Main {
 		Commissioned cm = new Commissioned("123",0.8,500,list);
 		Employee[] emp = { new Salaried("121",4000), new Hourly("122",15.67,20),cm};
 		for(Employee e :emp){
-			e.print(10,2019);
+			e.print(9,2019);
 		}
 	}
 }

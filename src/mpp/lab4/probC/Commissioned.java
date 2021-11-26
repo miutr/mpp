@@ -17,7 +17,7 @@ public class Commissioned extends Employee{
 	
 	@Override
 	public double calcGrossPay(int month, int year) {
-		return orders.stream().filter(order -> order.getOrderDate().getMonthValue() == month && order.getOrderDate().getYear() == year)
+		return baseSalary + orders.stream().filter(order -> order.getOrderDate().getMonthValue() == month && order.getOrderDate().getYear() == year)
 				.mapToDouble(order -> order.getOrderAmount()).sum() * commission;
 	}
 
