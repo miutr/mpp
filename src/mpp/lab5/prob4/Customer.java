@@ -3,10 +3,10 @@ package mpp.lab5.prob4;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Customer {
+public final class Customer {
 	private String name;
 	private List<Order> orders;
-	public Customer(String name) {
+	Customer(String name) {
 		this.name = name;
 		orders = new ArrayList<Order>();	
 	}

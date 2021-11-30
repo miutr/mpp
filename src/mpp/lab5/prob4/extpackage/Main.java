@@ -1,22 +1,28 @@
 package mpp.lab5.prob4.extpackage;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 import mpp.lab5.prob4.Order;
-import mpp.lab5.prob4.Customer;
+import mpp.lab5.prob4.CustOrderFactory;
+import mpp.lab5.prob4.CustomerAndOrders;
 
 public class Main {
 	public static void main(String[] args) {
-		Customer cust = new Customer("Bob");
-		Order order = Order.newOrder(cust, LocalDate.now());
+		
+		List<Order> orders = new ArrayList<Order>();
+		Order order = Order.newOrder(LocalDate.now());
 		order.addItem("Shirt");
 		order.addItem("Laptop");
-
-		order = Order.newOrder(cust, LocalDate.now());
+		orders.add(order);
+		order = Order.newOrder(LocalDate.now());
 		order.addItem("Pants");
 		order.addItem("Knife set");
-
-		System.out.println(cust.getOrders());
+		orders.add(order);
+		CustomerAndOrders custAndOrders = CustOrderFactory.createCustomerAndOrder("Bob", orders);
+	
+		System.out.println(custAndOrders.getCustomer().getOrders());
 	}
 }
 
